@@ -1,0 +1,85 @@
+*{
+    background-color: #111111;
+    font-family: sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: var(--color--white); 
+}
+
+*{
+    --color--white:snow;
+    --color--basic:grey;
+    --color--basic-ligth:lightslategray;
+    --color--primary:#007BFF;
+    --color--primary-ligth:#0056b3;
+    --color--succes:#34A853;
+    --color--succes-ligth:#2C8C47;
+    --color--danger:#EA4335;
+    --color--danger-ligth:#C5221F;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.card-container{
+    width: 400px;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    }
+
+
+      
+    /* basic-btn */
+.btn{
+    background-color: grey;
+    border: none;
+    color: snow;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: lightslategray;
+}
+
+/* btn primary */
+.btn-primary{
+    background-color: var(--color--primary);
+}
+.btn-primary:hover{
+    background-color: var(--color--primary-ligth);
+}
+
+/* btn succes */
+.btn-succes{
+    background-color: var(--color--succes)
+}
+.btn-succes:hover{
+    background-color: var(--color--succes-ligth);
+}
+
+/* btn danger */
+.btn-danger{
+    background-color: var(--color--danger)
+}
+.btn-danger:hover{
+    background-color: var(--color--danger-ligth);
+}
